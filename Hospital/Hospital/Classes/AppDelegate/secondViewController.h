@@ -10,4 +10,5 @@
 
 @interface secondViewController : UIViewController
 
+@property (nonatomic,strong)NSString *aaa;
 @end
