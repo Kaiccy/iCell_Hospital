@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C252FA241BEE1DCA00FF8572 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C252FA231BEE1DCA00FF8572 /* main.m */; };
-		C252FA271BEE1DCA00FF8572 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C252FA261BEE1DCA00FF8572 /* AppDelegate.m */; };
 		C252FA2D1BEE1DCA00FF8572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C252FA2B1BEE1DCA00FF8572 /* Main.storyboard */; };
 		C252FA301BEE1DCA00FF8572 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C252FA2E1BEE1DCA00FF8572 /* Hospital.xcdatamodeld */; };
 		C252FA321BEE1DCA00FF8572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C252FA311BEE1DCA00FF8572 /* Assets.xcassets */; };
 		C252FA351BEE1DCA00FF8572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C252FA331BEE1DCA00FF8572 /* LaunchScreen.storyboard */; };
+		C2BB6B971BF04D9C008B8391 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BB6B8A1BF04D9C008B8391 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C252FA1F1BEE1DCA00FF8572 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C252FA231BEE1DCA00FF8572 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C252FA251BEE1DCA00FF8572 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C252FA261BEE1DCA00FF8572 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C252FA2C1BEE1DCA00FF8572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C252FA2F1BEE1DCA00FF8572 /* Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hospital.xcdatamodel; sourceTree = "<group>"; };
 		C252FA311BEE1DCA00FF8572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C252FA341BEE1DCA00FF8572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C252FA361BEE1DCA00FF8572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2BB6B891BF04D9C008B8391 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2BB6B8A1BF04D9C008B8391 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,7 @@
 		C252FA211BEE1DCA00FF8572 /* Hospital */ = {
 			isa = PBXGroup;
 			children = (
-				C252FA251BEE1DCA00FF8572 /* AppDelegate.h */,
-				C252FA261BEE1DCA00FF8572 /* AppDelegate.m */,
+				C2BB6B871BF04D9C008B8391 /* Classes */,
 				C252FA2B1BEE1DCA00FF8572 /* Main.storyboard */,
 				C252FA311BEE1DCA00FF8572 /* Assets.xcassets */,
 				C252FA331BEE1DCA00FF8572 /* LaunchScreen.storyboard */,
@@ -75,6 +74,119 @@
 				C252FA231BEE1DCA00FF8572 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2BB6B871BF04D9C008B8391 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB6B881BF04D9C008B8391 /* AppDelegate */,
+				C2BB6B8B1BF04D9C008B8391 /* General */,
+				C2BB6B8F1BF04D9C008B8391 /* Helpers */,
+				C2BB6B901BF04D9C008B8391 /* Macro */,
+				C2BB6B911BF04D9C008B8391 /* Models */,
+				C2BB6B921BF04D9C008B8391 /* Resources */,
+				C2BB6B931BF04D9C008B8391 /* Scenes */,
+				C2BB6B961BF04D9C008B8391 /* Vendors */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C2BB6B881BF04D9C008B8391 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB6B891BF04D9C008B8391 /* AppDelegate.h */,
+				C2BB6B8A1BF04D9C008B8391 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C2BB6B8B1BF04D9C008B8391 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB6B8C1BF04D9C008B8391 /* Categories */,
+				C2BB6B8D1BF04D9C008B8391 /* ViewControllers */,
+				C2BB6B8E1BF04D9C008B8391 /* Views */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C2BB6B8C1BF04D9C008B8391 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C2BB6B8D1BF04D9C008B8391 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C2BB6B8E1BF04D9C008B8391 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2BB6B8F1BF04D9C008B8391 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2BB6B901BF04D9C008B8391 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C2BB6B911BF04D9C008B8391 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2BB6B921BF04D9C008B8391 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2BB6B931BF04D9C008B8391 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB6B941BF04D9C008B8391 /* View */,
+				C2BB6B951BF04D9C008B8391 /* ViewController */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C2BB6B941BF04D9C008B8391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2BB6B951BF04D9C008B8391 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C2BB6B961BF04D9C008B8391 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BB6B971BF04D9C008B8391 /* AppDelegate.m in Sources */,
 				C252FA301BEE1DCA00FF8572 /* Hospital.xcdatamodeld in Sources */,
-				C252FA271BEE1DCA00FF8572 /* AppDelegate.m in Sources */,
 				C252FA241BEE1DCA00FF8572 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
